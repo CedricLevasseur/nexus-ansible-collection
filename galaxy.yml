@@ -48,7 +48,7 @@ tags:
 dependencies: {}
 
 # The URL of the originating SCM repository
-repository: https://github.com/CloudKrafter/nexus-ansible-collection
+repository: https://github.com/clevasseur/nexus-ansible-collection
 
 # The URL to any online docs
 documentation: https://ansible-nexus.cloudkrafter.org
