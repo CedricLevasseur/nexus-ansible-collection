@@ -30,7 +30,7 @@
 - name: Get primary group and its hosts
   ansible.builtin.set_fact:
     nexus_group: "{{ inventory_hostname | cloudkrafter.nexus.direct_parent(groups) }}"
-    nexus_group_hosts: "{{ groups[inventory_hostname | cloudkrafter.nexus.direct_parent(groups)] | default([]) | sort }}"
+    nexus_group_hosts: "{{ groups[inventory_hostname | cloudkrafter.nexus.direct_parent(groups)]| first | default([]) | sort }}"
   tags: nexus-postgres,nexus-migrate
 
 - name: Show nexus group and its hosts
