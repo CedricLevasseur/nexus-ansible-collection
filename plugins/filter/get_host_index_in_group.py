@@ -46,11 +46,11 @@ def get_direct_parent(host, groups):
     smallest_groups = groups_by_size[smallest_size]
     
     # Error if multiple groups have the same smallest size
-    if len(smallest_groups) > 1:
-        raise ValueError(
-            f"Host {host} belongs to multiple groups of size {smallest_size}: "
-            f"{', '.join(smallest_groups)}. Cannot determine primary group."
-        )
+    #if len(smallest_groups) > 1:
+    #    raise ValueError(
+    #        f"Host {host} belongs to multiple groups of size {smallest_size}: "
+    #        f"{', '.join(smallest_groups)}. Cannot determine primary group."
+    #    )
     
     return smallest_groups[0]
 
